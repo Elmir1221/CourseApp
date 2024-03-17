@@ -1,5 +1,6 @@
 ﻿using DocumentFormat.OpenXml.Drawing.Charts;
 using DocumentFormat.OpenXml.Office2010.Excel;
+using DocumentFormat.OpenXml.Wordprocessing;
 using Domain.Models;
 using Repository.Repositories;
 using Repository.Repositories.Interface;
@@ -50,7 +51,9 @@ namespace Service.Services
 
         public List<Group> GeAllGroupsByName(string searchtext)
         {
-            throw new NotImplementedException();
+            var response = _groupRepo.GetGroupsByRoom(searchtext);
+
+            return response;
         }
 
         public List<Group> GetAllGroups()
@@ -62,6 +65,7 @@ namespace Service.Services
         {
             return _groupRepo.GetAllWithExpression(predicate);
         }
+
 
         public Group GetById(int? id)
         {
@@ -75,12 +79,15 @@ namespace Service.Services
 
         public List<Group> GetGroupsByRoom(string room)
         {
-            throw new NotImplementedException();
+            var response = _groupRepo.GetGroupsByRoom(room);
+
+            return response;
         }
 
         public List<Group> GetGroupsByTeacher(string teacher)
         {
-            throw new NotImplementedException();
+            var responce = _groupRepo.GetGroupsByTeacher(teacher);
+            return responce;
         }
     }
 }

@@ -1,4 +1,9 @@
-﻿using Domain.Models;
+﻿using DocumentFormat.OpenXml.Office2010.Excel;
+using Domain.Models;
+using Repository.Repositories;
+using Repository.Repositories.Interface;
+using Service.Helpers.Counstants;
+using Service.Helpers.Exceptions;
 using Service.Services.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -10,14 +15,29 @@ namespace Service.Services
 {
     public class StudentService : IStudentService
     {
-        public void Create(Student entity)
+        private readonly IStudentReposity _studentRepo;
+        private int count = 1;
+
+        public StudentService()
         {
-            throw new NotImplementedException();
+            _studentRepo = new StudentRepository();
         }
 
-        public void Delete(Student entity)
+        public void Create(Student entity)
         {
-            throw new NotImplementedException();
+            if (entity == null) throw new ArgumentNullException();
+            entity.Id = count;
+            _studentRepo.Create(entity);
+            count++;
+        }
+
+        public void Delete(int? id)
+        {
+            if (id is null) throw new NotImplementedException();
+            Student student = _studentRepo.GetById((int)id);
+
+            if (student is null) throw new NotFoundException(ResponceMessages.DataNotFound);
+            _studentRepo.Delete(student);
         }
 
         public void Edit(Student entity)
@@ -25,24 +45,27 @@ namespace Service.Services
             throw new NotImplementedException();
         }
 
-        public List<Student> GetAllById()
+        public List<Student> GetAllStudents()
         {
-            throw new NotImplementedException();
+            return _studentRepo.GetAllStudents();
         }
 
-        public List<Student> GetAllStudents(string data)
-        {
-            throw new NotImplementedException();
-        }
 
         public List<Student> GetByAge(int age)
         {
-            throw new NotImplementedException();
+            return _studentRepo.GetByAge(age);
+        }
+
+        public Student GetById(int? id)
+        {
+            Student student = _studentRepo.GetById((int)id);
+            if (student is null) throw new NotFoundException(ResponceMessages.DataNotFound);
+            return student;
         }
 
         public List<Student> GetStudentByGroupId(int? id)
         {
-            throw new NotImplementedException();
+            return _studentRepo.GetStudentByGroupId(id);
         }
     }
 }

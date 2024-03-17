@@ -21,6 +21,11 @@ namespace Repository.Repositories
             return AppDbContext<Student>.datas.Where(m => m.Age == age).ToList();
         }
 
+        public Student GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Student> GetStudentByGroupId(int? id)
         {
             return AppDbContext<Student>.datas.Where(m => m.Group.Id == id).ToList();

@@ -11,14 +11,15 @@ namespace Service.Services.Interfaces
     {
         void Create(Student entity);
 
-        void Delete(Student entity);
+        void Delete(int? id);
 
         void Edit(Student entity);
 
-        List<Student> GetAllById();
+        Student GetById(int? id);
+        List<Student> GetAllStudents();
 
         List<Student> GetByAge(int age);
         List<Student> GetStudentByGroupId(int? id);
-        List<Student> GetAllStudents(string data);
+       
     }
 }
