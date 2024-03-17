@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "UR9OH1jUv1Kt7OEPkf1l0zK+RmTjGJ3ipIZ5uieYF10ChxKSVPB4EU1c5yITnNM+Q/OrAneH/Wtkk5wF6e4yfA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\FA507XV\\Desktop\\CouseApp\\Service\\Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\FA507XV\\.nuget\\packages\\documentformat.openxml\\3.0.2\\documentformat.openxml.3.0.2.nupkg.sha512",
+    "C:\\Users\\FA507XV\\.nuget\\packages\\documentformat.openxml.framework\\3.0.2\\documentformat.openxml.framework.3.0.2.nupkg.sha512",
+    "C:\\Users\\FA507XV\\.nuget\\packages\\system.io.packaging\\8.0.0\\system.io.packaging.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
