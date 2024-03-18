@@ -23,7 +23,7 @@ namespace CourseAplication.Controllers
             _groupService = new GroupService();
         }
 
-        public void Creat()
+        public void Create()
         {
             ConsoleColor.Cyan.WriteConsole("Add Group Name");
             Name: string name = Console.ReadLine();
@@ -62,10 +62,39 @@ namespace CourseAplication.Controllers
                 }
             }    
         }
-        public void Delete()
+        //public void Delete()
+        //{
+        //    bool isValidId = false;
+
+        //    while (!isValidId)
+        //    {
+        //        Console.WriteLine("INPUT Group Id");
+        //        string idstr = Console.ReadLine();
+
+        //        if (int.TryParse(idstr, out int id))
+        //        {
+        //            try
+        //            {
+        //                _groupService.Delete(id);
+        //                Console.WriteLine("DATA SUCCESSFULLY REMOVED");
+        //                isValidId = true;
+        //            }
+        //            catch (Exception ex)
+        //            {
+        //                Console.WriteLine($"Error: {ex.Message}");
+        //            }
+        //        }
+        //        else
+        //        {
+        //            Console.WriteLine("Delete format is wrong, please try again.");
+        //        }
+        //    }
+        //}
+
+        public void Delete(int? id)
         {
-            ConsoleColor.Cyan.WriteConsole("Add Group Id");
-            Id: string idstr = Console.ReadLine();
+            ConsoleColor.Cyan.WriteConsole("INPUT Group Id");
+        Id: string idstr = Console.ReadLine();
             int id;
             bool isCorrectIdFormat = int.TryParse(idstr, out id);
             if (isCorrectIdFormat)
@@ -73,7 +102,7 @@ namespace CourseAplication.Controllers
                 try
                 {
                     _groupService.Delete(id);
-                    ConsoleColor.Green.WriteConsole("DATA SUCCESFULLY ADD");
+                    ConsoleColor.Green.WriteConsole("DATA SUCCESFULLY REMOVED");
                 }
                 catch (Exception ex)
                 {
@@ -99,7 +128,22 @@ namespace CourseAplication.Controllers
         }
         public void Edit()
         {
+            Id: ConsoleColor.Cyan.WriteConsole("Enter Group Id:");
+            int id;
+            bool isCorrectformat = int.TryParse(Console.ReadLine(), out id);
+            if (isCorrectformat)
+            {
+                ConsoleColor.Red.WriteConsole(string.Format(ResponceMessages.DataNotFound, "id"));
+                goto Id;
+            }
+            try
+            {
+                Group foundGroup = _groupService.Edit(id);
+            }
+            catch
+            {
 
+            }
         }
         public Group GetById(int? id)
         {

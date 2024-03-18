@@ -24,7 +24,7 @@ namespace Repository.Repositories
 
         public void Edit(T entity)
         {
-            throw new NotImplementedException();
+            
         }
 
         public T GetById(int id)

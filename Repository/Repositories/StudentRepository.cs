@@ -11,7 +11,7 @@ namespace Repository.Repositories
 {
     public class StudentRepository : BaseRepository<Student>, IStudentReposity
     {
-        public List<Student> GetAllStudents(string data)
+        public List<Student> GetAllStudents()
         {
             return AppDbContext<Student>.datas.ToList();
         }

@@ -13,7 +13,7 @@ namespace Repository.Repositories.Interface
 
         List<Student> GetByAge(int age);
         List<Student> GetStudentByGroupId(int? id);
-        List<Student> GetAllStudents(string data);
+        List<Student> GetAllStudents();
         Student GetById(int id);
         
     }

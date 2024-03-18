@@ -8,9 +8,9 @@ namespace Service.Helpers.Enums
 {
     public enum OperatingType
     {
-        StudentCreat = 1,
-        StdentEdit,
-        StudentDelete,
-        GetAllStudent,
+        GroupCreat = 1,
+        GroupDelete,
+        GetAllGroup,
+        EditGroup,
     }
 }
