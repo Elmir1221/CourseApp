@@ -1,0 +1,5 @@
+C:\Users\FA507XV\Desktop\CouseApp\CourseAplication\obj\Debug\net6.0\CourseAplication.csproj.AssemblyReference.cache
+C:\Users\FA507XV\Desktop\CouseApp\CourseAplication\obj\Debug\net6.0\CourseAplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FA507XV\Desktop\CouseApp\CourseAplication\obj\Debug\net6.0\CourseAplication.AssemblyInfoInputs.cache
+C:\Users\FA507XV\Desktop\CouseApp\CourseAplication\obj\Debug\net6.0\CourseAplication.AssemblyInfo.cs
+C:\Users\FA507XV\Desktop\CouseApp\CourseAplication\obj\Debug\net6.0\CourseAplication.csproj.CoreCompileInputs.cache

@@ -3,3 +3,13 @@ C:\Users\FA507XV\Desktop\CouseApp\Repository\obj\Debug\net6.0\Repository.Generat
 C:\Users\FA507XV\Desktop\CouseApp\Repository\obj\Debug\net6.0\Repository.AssemblyInfoInputs.cache
 C:\Users\FA507XV\Desktop\CouseApp\Repository\obj\Debug\net6.0\Repository.AssemblyInfo.cs
 C:\Users\FA507XV\Desktop\CouseApp\Repository\obj\Debug\net6.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\FA507XV\Desktop\CouseApp\Repository\bin\Debug\net6.0\Repository.deps.json
+C:\Users\FA507XV\Desktop\CouseApp\Repository\bin\Debug\net6.0\Repository.dll
+C:\Users\FA507XV\Desktop\CouseApp\Repository\bin\Debug\net6.0\Repository.pdb
+C:\Users\FA507XV\Desktop\CouseApp\Repository\bin\Debug\net6.0\Domain.dll
+C:\Users\FA507XV\Desktop\CouseApp\Repository\bin\Debug\net6.0\Domain.pdb
+C:\Users\FA507XV\Desktop\CouseApp\Repository\obj\Debug\net6.0\Repository.csproj.CopyComplete
+C:\Users\FA507XV\Desktop\CouseApp\Repository\obj\Debug\net6.0\Repository.dll
+C:\Users\FA507XV\Desktop\CouseApp\Repository\obj\Debug\net6.0\refint\Repository.dll
+C:\Users\FA507XV\Desktop\CouseApp\Repository\obj\Debug\net6.0\Repository.pdb
+C:\Users\FA507XV\Desktop\CouseApp\Repository\obj\Debug\net6.0\ref\Repository.dll

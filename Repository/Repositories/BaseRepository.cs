@@ -27,9 +27,9 @@ namespace Repository.Repositories
             throw new NotImplementedException();
         }
 
-        public List<T> GetAllById()
+        public T GetById(int id)
         {
-            return AppDbContext<T>.datas.ToList();
+            return AppDbContext<T>.datas.FirstOrDefault(m => m.Id == id);
         }
 
         public List<T> GetAllWithExpression(Func<T, bool> predicate)

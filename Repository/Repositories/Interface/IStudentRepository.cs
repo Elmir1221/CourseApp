@@ -15,7 +15,7 @@ namespace Repository.Repositories.Interface
         List<Student> GetStudentByGroupId(int? id);
         List<Student> GetAllStudents(string data);
         Student GetById(int id);
-        List<Student> GetAllStudents();
+        
     }
 
 }
